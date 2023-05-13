@@ -19,6 +19,21 @@ function startGame() {
     addNumber()
     render()
 
+
+
+    document.querySelector('body').addEventListener('keydown', (e) => {
+        if (e.code === 'KeyW') {
+            console.log('кнопка w нажата')
+        } else if (e.code === 'KeyS') {
+            console.log('кнопка s нажата')
+        } else if (e.code === 'KeyA') {
+            console.log('кнопка a нажата')
+        } else if (e.code === 'KeyD') {
+            console.log('кнопка d нажата')
+        }
+    })
+
+
     function addNumber() {
         let isAdded = false
         while (!isAdded) {
